@@ -1,59 +1,100 @@
-# LearningAngular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
+# Aprendendo Angular
 
-## Development server
+Esse projeto foi criado com a função de aprender [angular](https://angular.dev/installation).
 
-To start a local development server, run:
+Nesse projeto a [documentação do angular](https://angular.dev) está na [versão 20](https://angular.dev/installation).
 
-```bash
-ng serve
-```
+## Demonstração
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Em construção.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Screenshots
 
-```bash
-ng generate component component-name
-```
+![App Home](./img/screen-001.png)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+## Variáveis de Ambiente
 
-## Building
+Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
 
-To build the project run:
+`NOTION_KEY`
 
-```bash
-ng build
-```
+`DATABASE_ID`
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+`GOOGLE_KEY`
 
-## Running unit tests
+`CHANNEL_ID`
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+## Rodando localmente
+
+Clone o projeto
 
 ```bash
-ng test
+  git clone https://github.com/danilo-righetto/learning-angular
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Entre no diretório do projeto
 
 ```bash
-ng e2e
+  cd learning-angular
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Instale o Angular CLI
 
-## Additional Resources
+```bash
+  npm install -g @angular/cli
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Instale as dependências
+
+```bash
+  npm install
+  # node version v22.21.0
+```
+
+Inicie o servidor
+
+```bash
+  ng serve
+```
+
+Após isso acesse o projeto: [http://localhost:4200](http://localhost:4200/).
+
+## Instalação
+
+Execute o comando para realizar a instalação do projeto:
+
+```bash
+  npm install
+```
+
+**Observação**: utilize a versão [v22.21.0](https://nodejs.org/pt) do Node.
+    
+## Deploy
+
+Para fazer o deploy desse projeto rode o seguinte comando:
+
+```bash
+  ng build
+```
+
+
+## Documentação
+
+Em construção.
+
+## Autores
+
+- [@danilorighetto](https://www.linkedin.com/in/danilo-righetto/)
+
+
+## Referência
+
+ - [Angular 20 em 1 HORA | Versão 2025](https://www.youtube.com/watch?v=_dh6dpaiTrY&t=2820s)
+
+## Licença
+
+[GNU Affero v3.0](https://choosealicense.com/licenses/agpl-3.0/)
