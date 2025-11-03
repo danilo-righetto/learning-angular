@@ -7,12 +7,11 @@ Nesse projeto a [documentação do angular](https://angular.dev) está na [vers�
 
 ## Demonstração
 
-Em construção.
-
+![Tela Inicial](./img/main.png)
 
 ## Screenshots
 
-![App Home](./img/screen-001.png)
+![Lista de Tarefas](./img/tasks.png)
 
 
 ## Variáveis de Ambiente
@@ -84,7 +83,14 @@ Para fazer o deploy desse projeto rode o seguinte comando:
 
 ## Documentação
 
-Em construção.
+As rotas são carregadas com "**Lazy Load**":
+
+![Rotas](./img/routes.png)
+
+Os itens das tarefas são armazenados **localmente**:
+
+![Armazenamento Local](./img/localStorage.png)
+
 
 ## Autores
 
