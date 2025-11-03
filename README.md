@@ -93,7 +93,7 @@ Em construção.
 
 ## Referência
 
- - [Angular 20 em 1 HORA | Versão 2025](https://www.youtube.com/watch?v=_dh6dpaiTrY&t=2820s)
+ - [Angular 20 em 1 HORA | Versão 2025](https://www.youtube.com/watch?v=_dh6dpaiTrY)
 
 ## Licença
 
