@@ -3,17 +3,30 @@
     <div>
         <p>A lista de tarefas está em desenvolvimento</p>
     </div>
+    <div>
+        <input type="text" placeholder="Adicionar nova tarefa" class="input w-full"
+            (keyup.enter)="addTodo($event, $event.target)"
+        >
+    </div>
     <div class="flex flex-col gap-2">
         <!-- Percorrendo os elementos do serviço Todo -->
         @for (item of todos.items(); track item.id) {
             <div class="p-4 border border-zinc-800 rounded-lg flex items-center gap-4">
-                <span class="flex-1">{{item.title}}</span>
+                <span [class.line-through]="item.completed" class="flex-1">{{item.title}}</span>
                 <span [class.bg-green-700]="item.completed" [class.bg-yellow-700]="!item.completed" class="px-4 py-1 rounded-full text-sm">
                     {{ item.completed ? 'Concluído' : 'Pendente' }}
                 </span>
                 <div>
-                    <button (click)="todos.toggle(item.id)" class="btn btn-primary mr-2">
-                        {{ item.completed ? 'Marcar como Pendente' : 'Marcar como Concluído' }}
+                    <button (click)="todos.toggle(item.id)" class="btn btn-secondary mr-2"
+                    [class.bg-zinc-700]="item.completed" [class.bg-green-700]="!item.completed">
+                        <mat-icon fontSet="material-symbols-outlined">
+                            {{ item.completed ? 'undo' : 'check_circle' }}
+                        </mat-icon>
+                    </button>
+                    <button (click)="todos.remove(item.id)" class="btn btn-danger">
+                        <mat-icon fontSet="material-symbols-outlined">
+                            Delete
+                        </mat-icon>
                     </button>
                 </div>
             </div>
