@@ -3,4 +3,18 @@
     <div>
         <p>A lista de tarefas está em desenvolvimento</p>
     </div>
+    <div class="flex flex-col gap-2">
+        <!-- Percorrendo os elementos do serviço Todo -->
+        @for (item of todos.items(); track item.id) {
+            <div class="p-4 border border-zinc-800 rounded-lg flex items-center gap-4">
+                <span class="flex-1">{{item.title}}</span>
+                <span [class.bg-green-700]="item.completed" [class.bg-yellow-700]="!item.completed" class="px-4 py-1 rounded-full text-sm">
+                    {{ item.completed ? 'Concluído' : 'Pendente' }}
+                </span>
+                <div>
+                    <button></button>
+                </div>
+            </div>
+        }
+    </div>
 </div>
