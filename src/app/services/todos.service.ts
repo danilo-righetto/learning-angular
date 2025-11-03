@@ -12,4 +12,12 @@ export class TodosService {
   ]);
 
   readonly items = this._items.asReadonly();
+
+  toggle(id: string) {
+    this._items.update((items) => 
+      items.map((item) => 
+        item.id === id ? { ...item, completed: !item.completed } : item
+      )
+    )
+  }
 }

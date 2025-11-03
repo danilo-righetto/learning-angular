@@ -12,7 +12,9 @@
                     {{ item.completed ? 'Concluído' : 'Pendente' }}
                 </span>
                 <div>
-                    <button></button>
+                    <button (click)="todos.toggle(item.id)" class="btn btn-primary mr-2">
+                        {{ item.completed ? 'Marcar como Pendente' : 'Marcar como Concluído' }}
+                    </button>
                 </div>
             </div>
         }
